@@ -50,10 +50,8 @@ Backend:
 
 ```bash
 cd backend
-python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
+uvicorn app.main:app --port 8001 --reload
 ```
 
 Frontend:
@@ -64,4 +62,4 @@ npm install
 npm start
 ```
 
-Set `REACT_APP_API_BASE_URL` if the backend is not running at `http://localhost:8000`.
+Default backend runs at `http://localhost:8001` (to avoid common local port collisions on 8000). Set `REACT_APP_API_BASE_URL` in `frontend/.env` if using a different port.

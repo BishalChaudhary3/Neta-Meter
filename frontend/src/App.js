@@ -19,7 +19,7 @@ import {
 import PromiseCard from './Components/PromiseCard';
 import { battleAudio } from './battleAudio';
 
-const API_BASE = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000';
+const API_BASE = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8001';
 
 const categories = [
   'roads',
